@@ -4,35 +4,31 @@
 ---
 <!-- 3 col section with info -->
   <section class="">
-    <div class="grid  md:grid-cols-3 gap-10 max-w-screen-2xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 max-w-screen-2xl mx-auto">
 
       <!-- used flex here so that the vertical text takes up a small amount of space and leaving the rest for the div with bg image -->
       <div class="flex self-start">
         <p class="vertical-text px-2">
-          baro architecture
+          Gemwork Station
         </p>
-        <div class="grow relative aspect-portrait bg pb-[50%]" style="background-image: url('https://picsum.photos/id/1081/600/400');">
+        <div class="grow relative aspect-portrait bg pb-[50%]" style="background-image: url('/images/hero.png');">
           <div class="w-5 h-5 navpoint bg-white absolute inline-block rounded-full bottom-8 right-8 pulse-animation">
-            <div class="right-[1rem] absolute top-0 overflow-hidden w-0 sub-points block whitespace-nowrap">41°24'12.2"N 2°10'26.5"E</div>
+            <div class="right-[1rem] absolute top-0 overflow-hidden w-0 sub-points block whitespace-nowrap">GW</div>
           </div>
         </div>
       </div>
       <!-- col span 2 + coloumns 2 means that on desktop it will evenly break up the content between the 2 columns -->
-      <div class="md:col-span-2 md:columns-2 gap-10">
-        <h2 class="mb-0">Barō -</h2>
-        <h3 class="mb-8 text-3xl">Beyond the design</h3>
+      <div class="gap-10">
+        <h2 class="mb-0 md:col-span-2">Gemwork Station</h2>
+        <h3 class="mb-4 text-3xl">Illuminate Your Online Presence</h3>
         <p>With a rich history spanning decades, Baro Architecture has become synonymous with architectural excellence and a forward-thinking approach to the built environment.
         </p>
-
         <p>
           Baro Architecture was founded by visionary architect, Alejandro Baro, who sought to challenge the conventional boundaries of design and create spaces that inspire and elevate the human experience. With a passion for blending artistry, functionality, and sustainability, Baro Architecture has left an indelible mark on the architectural landscape.
         </p>
         <p>
           Our team of talented architects and designers brings a diverse range of expertise and a shared commitment to pushing the boundaries of creativity. We believe that every project presents an opportunity to craft unique solutions that not only meet our clients' needs but also leave a lasting impact on communities and the environment.
 
-        </p>
-        <p>
-          Baro Architecture's portfolio spans a wide range of projects, from awe-inspiring residential homes and commercial spaces to iconic cultural landmarks.
         </p>
 
         <!-- arrow color is passed with the color variable -->
@@ -48,7 +44,7 @@
 
   <!-- first property  -->
   <section class="bg-[var(--dark)] text-white">
-    <div class="grid md:grid-cols-2 items-end pb-5p gap-8  max-w-screen-2xl mx-auto">
+    <div class="grid md:grid-cols-2 items-end pb-5p gap-8 max-w-screen-2xl mx-auto">
 
       {% assign sorted = site.property | sort: 'date' %}
       {% for prop in sorted limit:1 %}
@@ -140,7 +136,7 @@
       </div>
       <div class="mt-8 md:mt-32 flex items-stretch">
         <div class="grow bg-cover bg-center pb-[50%] scroll-in-from-bottom" style="background-image: url('{{prop.featured_image}}');"></div>
-        <p class="vertical-text px-4">Barō Architecture</p>
+        <p class="vertical-text px-4">Gemwork Station</p>
       </div>
     {% endfor %}
     </div>

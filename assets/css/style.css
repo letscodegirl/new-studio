@@ -770,6 +770,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-sig {
+  --tw-bg-opacity: 1;
+  background-color: #341126;
+}
 .bg-cover {
   background-size: cover;
 }
@@ -1053,6 +1057,9 @@ background-color: #000;
   .md\:columns-2 {
     -moz-columns: 2;
          columns: 2;
+  }
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
